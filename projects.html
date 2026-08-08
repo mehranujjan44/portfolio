@@ -29,20 +29,120 @@
 
 <div class="pagehead">
   <div class="wrap">
-    <div class="eyebrow">Log entries — by deployment</div>
+    <div class="eyebrow">Log entries — by area of expertise</div>
     <h1 class="pagetitle">Projects</h1>
-    <p class="pagesub">Production systems, organized by the company that shipped them — field-deployed perception at Kodifly, the SpatialSense SaaS suite, video analytics at Hubcom, applied GenAI and CV at Synaptics, enterprise RAG at Accelerated Innovation, and the industrial ML that started it all at NCRA.</p>
+    <p class="pagesub">Production systems, grouped by discipline rather than employer — 3D reconstruction and spatial intelligence, video analytics and surveillance, enterprise GenAI, and the industrial ML that started it all.</p>
   </div>
 </div>
 
-<section>
+<nav class="jumpnav">
+  <div class="jumpnav-inner">
+    <a href="#spatial">3D Reconstruction &amp; Spatial Intelligence</a>
+    <a href="#video">Video Analytics &amp; Surveillance</a>
+    <a href="#genai">Enterprise GenAI &amp; LLM Agents</a>
+    <a href="#industrial">Industrial ML</a>
+  </div>
+</nav>
+
+<section id="spatial">
   <div class="wrap">
     <div class="sec-head">
       <span class="sec-num">01</span>
-      <h2 class="sec-title">Kodifly — field-deployed perception</h2>
-      <span class="sec-sub">2025 — 2026 · Islamabad</span>
+      <h2 class="sec-title">3D Reconstruction &amp; Spatial Intelligence</h2>
+      <span class="sec-sub">3DGS · NeRF · SfM · LiDAR fusion · BIM</span>
     </div>
 
+    <div class="sub-label">SpatialSense · <a href="https://www.spatialsense.app/" target="_blank" rel="noopener" class="sec-link">spatialsense.app ↗</a></div>
+    <div class="micro-grid cols-3">
+      <div class="micro-card">
+        <img class="micro-image" src="https://images.unsplash.com/photo-1686358244616-aed9e9a1d827?auto=format&fit=crop&w=800&q=60" alt="Aerial view of a construction site" loading="lazy">
+        <div class="micro-body">
+        <div class="micro-title">Time-compare analysis</div>
+        <div class="micro-desc">Compares point clouds from drone, fixed, and handheld scanners over time to show how a site has changed between visits.</div>
+        <div class="micro-tags"><span class="tag">Multi-source PCD</span></div>
+        </div>
+      </div>
+      <div class="micro-card">
+        <img class="micro-image" src="https://images.unsplash.com/photo-1721244654392-9c912a6eb236?auto=format&fit=crop&w=800&q=60" alt="Architectural blueprint of a building" loading="lazy">
+        <div class="micro-body">
+        <div class="micro-title">BIM deviation detection</div>
+        <div class="micro-desc">Flags anything installed on site that wasn't part of the BIM model, at LOD 300–400 precision.</div>
+        <div class="micro-tags"><span class="tag">LOD 300–400</span></div>
+        </div>
+      </div>
+      <div class="micro-card">
+        <img class="micro-image" src="https://images.unsplash.com/photo-1465447142348-e9952c393450?auto=format&fit=crop&w=800&q=60" alt="Aerial view of a highway" loading="lazy">
+        <div class="micro-body">
+        <div class="micro-title">Visual progress analysis</div>
+        <div class="micro-desc">Tracks what's been installed on site over time. Used on a Saudi road network project to count signboards and traffic signals installed along a scanned highway corridor.</div>
+        <div class="micro-tags"><span class="tag">Saudi road network</span></div>
+        </div>
+      </div>
+      <div class="micro-card">
+        <img class="micro-image" src="https://images.unsplash.com/photo-1756913454165-246d96a20b67?auto=format&fit=crop&w=800&q=60" alt="Aerial view of a solar panel farm" loading="lazy">
+        <div class="micro-body">
+        <div class="micro-title">Solar &amp; fishpond encroachment analysis</div>
+        <div class="micro-desc">Built for the Lands Department of Hong Kong: segments solar panels and fishponds from drone imagery for encroachment analysis, plus a 2024–2025 time-compare of new solar installs.</div>
+        <div class="micro-tags"><span class="tag">Lands Dept, HK</span></div>
+        </div>
+      </div>
+      <div class="micro-card">
+        <img class="micro-image" src="https://images.unsplash.com/photo-1682663810771-89d21838530f?auto=format&fit=crop&w=800&q=60" alt="Surveying tripod at a construction site" loading="lazy">
+        <div class="micro-body">
+        <div class="micro-title">Site-wide 3D fusion</div>
+        <div class="micro-desc">Every 30 minutes, SLAM runs and merges point clouds from every location into one unified 3D site model, using FAST-LIVO2, custom sensor drivers, and fleet device management.</div>
+        <div class="micro-tags"><span class="tag">FAST-LIVO2</span></div>
+        </div>
+      </div>
+      <div class="micro-card">
+        <img class="micro-image" src="https://images.unsplash.com/photo-1759318965270-0549e993a3b8?auto=format&fit=crop&w=800&q=60" alt="Aerial drone view of a construction site" loading="lazy">
+        <div class="micro-body">
+        <div class="micro-title">Drone orthophoto change detection</div>
+        <div class="micro-desc">SAM3 segmentation and geospatial alignment to detect change across building envelopes, fish ponds, and solar panels between 2024–2025 survey datasets.</div>
+        <div class="micro-tags"><span class="tag">SAM3</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-label" style="margin-top:20px;">Smart-Eye · Kodifly</div>
+    <div class="micro-grid cols-3">
+      <div class="micro-card">
+        <img class="micro-image" src="https://images.unsplash.com/photo-1517011453931-c30f571a4fab?auto=format&fit=crop&w=800&q=60" alt="Steel structural frame at a construction site" loading="lazy">
+        <div class="micro-body">
+        <div class="micro-title">MiC installation tracking</div>
+        <div class="micro-desc">BIM comparison to track how many Modular integrated Construction (MiC) modules have been installed against plan, flagging schedule drift.</div>
+        <div class="micro-tags"><span class="tag">BIM comparison</span></div>
+        </div>
+      </div>
+      <div class="micro-card">
+        <img class="micro-image" src="https://images.unsplash.com/photo-1625427333598-b33b0c9200e9?auto=format&fit=crop&w=800&q=60" alt="Rocky soil and trees on a slope" loading="lazy">
+        <div class="micro-body">
+        <div class="micro-title">Soil nail &amp; backfilling detection</div>
+        <div class="micro-desc">Detects soil nail installation and backfilling progress from 3D Gaussian Splatting reconstructions and drone scans.</div>
+        <div class="micro-tags"><span class="tag">3DGS</span></div>
+        </div>
+      </div>
+      <div class="micro-card">
+        <img class="micro-image" src="https://images.unsplash.com/photo-1690719495572-bc42843eae29?auto=format&fit=crop&w=800&q=60" alt="Excavator digging dirt at a construction site" loading="lazy">
+        <div class="micro-body">
+        <div class="micro-title">Excavated volume analysis</div>
+        <div class="micro-desc">Computes excavated volume from drone scan reconstructions to track earthworks progress against plan.</div>
+        <div class="micro-tags"><span class="tag">Volumetrics</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="video">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">Video Analytics &amp; Surveillance</h2>
+      <span class="sec-sub">Detection · tracking · re-ID · facial recognition</span>
+    </div>
+
+    <div class="sub-label">Kodifly — field systems</div>
     <div class="proj-grid">
       <div class="proj-card">
         <img class="proj-image" src="https://images.unsplash.com/photo-1660367532596-c06c8c47a0e5?auto=format&fit=crop&w=1200&q=60" alt="Tunnel infrastructure" loading="lazy">
@@ -79,43 +179,11 @@
       </div>
     </div>
 
-    <div class="sub-label" style="margin-top:32px;">Flagship — largest deployment</div>
-    <div class="proj-grid">
-      <div class="proj-card" style="grid-column:1/-1;">
-        <img class="proj-image" src="https://images.unsplash.com/photo-1686358244616-aed9e9a1d827?auto=format&fit=crop&w=1200&q=60" alt="Aerial view of a construction site" loading="lazy">
-        <div class="proj-body">
-        <div class="proj-kicker">Construction · Video &amp; 3D analytics</div>
-        <div class="proj-title">Smart-Eye</div>
-        <div class="proj-role">The largest system built at Kodifly — 40+ Jetson devices in the field, each paired with a camera and LiDAR on a PTZ dome. Live product, behind a client paywall.</div>
-        <div class="proj-tags">
-          <span class="tag">40+ Jetson devices</span><span class="tag">LiDAR + PTZ</span><span class="tag">FAST-LIVO2</span>
-        </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="sub-label">Smart-Eye capabilities</div>
-    <div class="micro-grid cols-3">
-      <div class="micro-card">
-        <img class="micro-image" src="https://images.unsplash.com/photo-1682663810771-89d21838530f?auto=format&fit=crop&w=800&q=60" alt="Surveying tripod at a construction site" loading="lazy">
-        <div class="micro-body">
-        <div class="micro-title">Site-wide 3D fusion</div>
-        <div class="micro-desc">Every 30 minutes, SLAM runs and merges point clouds from every location into a single unified 3D representation of the site's current state, using FAST-LIVO2, custom sensor drivers, and fleet-wide device management.</div>
-        <div class="micro-tags"><span class="tag">FAST-LIVO2</span><span class="tag">PCD merging</span></div>
-        </div>
-      </div>
-      <div class="micro-card">
-        <img class="micro-image" src="https://images.unsplash.com/photo-1517011453931-c30f571a4fab?auto=format&fit=crop&w=800&q=60" alt="Steel structural frame at a construction site" loading="lazy">
-        <div class="micro-body">
-        <div class="micro-title">MiC installation tracking</div>
-        <div class="micro-desc">BIM comparison to track how many Modular integrated Construction (MiC) modules have been installed against plan, flagging schedule drift.</div>
-        <div class="micro-tags"><span class="tag">BIM comparison</span></div>
-        </div>
-      </div>
+    <div class="micro-grid cols-3" style="margin-top:1px;">
       <div class="micro-card">
         <img class="micro-image" src="https://images.unsplash.com/photo-1569169513673-2cecbfc943a9?auto=format&fit=crop&w=800&q=60" alt="Tower crane at a construction site" loading="lazy">
         <div class="micro-body">
-        <div class="micro-title">Tower crane monitoring</div>
+        <div class="micro-title">Tower crane monitoring — Smart-Eye</div>
         <div class="micro-desc">Camera-based uptime and downtime tracking per crane for usage analysis across the site.</div>
         <div class="micro-tags"><span class="tag">Usage analytics</span></div>
         </div>
@@ -123,84 +191,22 @@
       <div class="micro-card">
         <img class="micro-image" src="https://images.unsplash.com/photo-1543997385-22fe0f397eeb?auto=format&fit=crop&w=800&q=60" alt="Aerial view of a city road" loading="lazy">
         <div class="micro-body">
-        <div class="micro-title">Traffic congestion monitoring</div>
-        <div class="micro-desc">Tracks machinery movement in and out of site zones, analyzing usage patterns and raising alerts when a route is likely to be blocked, so teams can plan around it.</div>
+        <div class="micro-title">Traffic congestion monitoring — Smart-Eye</div>
+        <div class="micro-desc">Tracks machinery movement in and out of site zones, raising alerts when a route is likely to be blocked, so teams can plan around it.</div>
         <div class="micro-tags"><span class="tag">Route planning</span></div>
         </div>
       </div>
       <div class="micro-card">
-        <img class="micro-image" src="https://images.unsplash.com/photo-1625427333598-b33b0c9200e9?auto=format&fit=crop&w=800&q=60" alt="Rocky soil and trees on a slope" loading="lazy">
+        <img class="micro-image" src="https://images.unsplash.com/photo-1483519173755-be893fab1f46?auto=format&fit=crop&w=800&q=60" alt="Macro photography of a human eye" loading="lazy">
         <div class="micro-body">
-        <div class="micro-title">Soil nail &amp; backfilling detection</div>
-        <div class="micro-desc">Detects soil nail installation and backfilling progress from 3D Gaussian Splatting reconstructions and drone scans.</div>
-        <div class="micro-tags"><span class="tag">3DGS</span><span class="tag">Drone scans</span></div>
-        </div>
-      </div>
-      <div class="micro-card">
-        <img class="micro-image" src="https://images.unsplash.com/photo-1690719495572-bc42843eae29?auto=format&fit=crop&w=800&q=60" alt="Excavator digging dirt at a construction site" loading="lazy">
-        <div class="micro-body">
-        <div class="micro-title">Excavated volume analysis</div>
-        <div class="micro-desc">Computes excavated volume from drone scan reconstructions to track earthworks progress against plan.</div>
-        <div class="micro-tags"><span class="tag">Volumetrics</span></div>
+        <div class="micro-title">Iris similarity analysis — Synaptics Solution</div>
+        <div class="micro-desc">Analyzed iris imagery to find visually similar irises across a photo studio's stored portraits, used to generate creative "fusion" digital artwork.</div>
+        <div class="micro-tags"><span class="tag">Similarity search</span></div>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<section>
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">02</span>
-      <h2 class="sec-title">SpatialSense</h2>
-      <span class="sec-sub"><a href="https://www.spatialsense.app/" target="_blank" rel="noopener" class="sec-link">spatialsense.app ↗</a></span>
-    </div>
-    <p class="pagesub" style="margin-bottom:28px;">A SaaS suite for point-cloud and image-based site analysis — the productized side of Kodifly's 3D reconstruction work.</p>
-
-    <div class="micro-grid cols-3">
-      <div class="micro-card">
-        <img class="micro-image" src="https://images.unsplash.com/photo-1759318965270-0549e993a3b8?auto=format&fit=crop&w=800&q=60" alt="Aerial drone view of a construction site" loading="lazy">
-        <div class="micro-body">
-        <div class="micro-title">Time-compare analysis</div>
-        <div class="micro-desc">Compares point clouds from drone, fixed, and handheld scanners over time to show how a site has changed between visits.</div>
-        <div class="micro-tags"><span class="tag">Multi-source PCD</span></div>
-        </div>
-      </div>
-      <div class="micro-card">
-        <img class="micro-image" src="https://images.unsplash.com/photo-1721244654392-9c912a6eb236?auto=format&fit=crop&w=800&q=60" alt="Architectural blueprint of a building" loading="lazy">
-        <div class="micro-body">
-        <div class="micro-title">BIM deviation detection</div>
-        <div class="micro-desc">Flags anything installed on site that wasn't part of the BIM model, at LOD 300–400 precision.</div>
-        <div class="micro-tags"><span class="tag">LOD 300–400</span></div>
-        </div>
-      </div>
-      <div class="micro-card">
-        <img class="micro-image" src="https://images.unsplash.com/photo-1465447142348-e9952c393450?auto=format&fit=crop&w=800&q=60" alt="Aerial view of a highway" loading="lazy">
-        <div class="micro-body">
-        <div class="micro-title">Visual progress analysis</div>
-        <div class="micro-desc">Tracks what's been installed on site over time. Used on a Saudi road network project to identify how many signboards and traffic signals had been installed along a scanned highway corridor.</div>
-        <div class="micro-tags"><span class="tag">Saudi road network</span></div>
-        </div>
-      </div>
-      <div class="micro-card">
-        <img class="micro-image" src="https://images.unsplash.com/photo-1756913454165-246d96a20b67?auto=format&fit=crop&w=800&q=60" alt="Aerial view of a solar panel farm" loading="lazy">
-        <div class="micro-body">
-        <div class="micro-title">Solar &amp; fishpond encroachment analysis</div>
-        <div class="micro-desc">Built for the Lands Department of Hong Kong: segments solar panels and fishponds from drone imagery to detect encroachment, plus a time-compare analysis of how many additional solar panels were installed between 2024 and 2025.</div>
-        <div class="micro-tags"><span class="tag">Lands Dept, HK</span><span class="tag">Segmentation</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">03</span>
-      <h2 class="sec-title">Hubcom — BURD</h2>
-      <span class="sec-sub"><a href="https://hubcom.co/products/burd/" target="_blank" rel="noopener" class="sec-link">hubcom.co/products/burd ↗</a></span>
-    </div>
+    <div class="sub-label" style="margin-top:20px;">Hubcom</div>
     <div class="proj-grid">
       <div class="proj-card">
         <img class="proj-image" src="https://images.unsplash.com/photo-1563920443079-783e5c786b83?auto=format&fit=crop&w=1200&q=60" alt="CCTV surveillance cameras" loading="lazy">
@@ -222,22 +228,36 @@
   </div>
 </section>
 
-<section>
+<section id="genai">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-num">04</span>
-      <h2 class="sec-title">Synaptics Solution</h2>
-      <span class="sec-sub">Karachi · Founding team</span>
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">Enterprise GenAI &amp; LLM Agents</h2>
+      <span class="sec-sub">RAG · multi-agent systems · evaluation</span>
     </div>
-    <div class="micro-grid cols-3">
-      <div class="micro-card">
-        <img class="micro-image" src="https://images.unsplash.com/photo-1483519173755-be893fab1f46?auto=format&fit=crop&w=800&q=60" alt="Macro photography of a human eye" loading="lazy">
-        <div class="micro-body">
-        <div class="micro-title">Iris similarity analysis</div>
-        <div class="micro-desc">Analyzed iris imagery to find visually similar irises across a photo studio's stored portraits, used to generate creative "fusion" digital artwork.</div>
-        <div class="micro-tags"><span class="tag">Similarity search</span></div>
+
+    <div class="sub-label">Accelerated Innovation</div>
+    <div class="proj-grid">
+      <div class="proj-card">
+        <img class="proj-image" src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?auto=format&fit=crop&w=1200&q=60" alt="Server rack in a data center" loading="lazy">
+        <div class="proj-body">
+        <div class="proj-kicker">Enterprise GenAI · Multi-agent RAG</div>
+        <div class="proj-title">Eddie — KTW Knowledge Assistant</div>
+        <div class="proj-role">Senior GenAI Engineer</div>
+        <div class="proj-desc">A multi-agent RAG system on LangGraph and ChromaDB with a six-node pipeline (Boundary Guard, Classifier, Clarifier, Retriever, Solution Router, Composer) routing users through a 108-solution catalog tied to a 109-key data model. Backed by a four-layer UAT framework — a 45-scenario golden set, 23 adversarial cases, LLM-as-judge scoring, and a 600-scenario routing benchmark — and deployed on AWS EC2 behind nginx with Let's Encrypt SSL.</div>
+        <div class="proj-tags">
+          <span class="tag">LangGraph</span><span class="tag">ChromaDB</span><span class="tag">GPT-4o</span><span class="tag">OpenTelemetry</span>
+        </div>
+        <div class="proj-stats">
+          <div><div class="proj-stat-val">108</div><div class="proj-stat-label">Solution catalog</div></div>
+          <div><div class="proj-stat-val">600</div><div class="proj-stat-label">Routing benchmark cases</div></div>
+        </div>
         </div>
       </div>
+    </div>
+
+    <div class="sub-label" style="margin-top:20px;">Synaptics Solution</div>
+    <div class="micro-grid cols-3">
       <div class="micro-card">
         <img class="micro-image" src="https://images.unsplash.com/photo-1682941664177-7920d0e59418?auto=format&fit=crop&w=800&q=60" alt="Person holding a phone with a chat app open" loading="lazy">
         <div class="micro-body">
@@ -274,42 +294,15 @@
   </div>
 </section>
 
-<section>
+<section id="industrial">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-num">05</span>
-      <h2 class="sec-title">Accelerated Innovation</h2>
-      <span class="sec-sub">US-based · Remote</span>
-    </div>
-    <div class="proj-grid">
-      <div class="proj-card">
-        <img class="proj-image" src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?auto=format&fit=crop&w=1200&q=60" alt="Server rack in a data center" loading="lazy">
-        <div class="proj-body">
-        <div class="proj-kicker">Enterprise GenAI · Multi-agent RAG</div>
-        <div class="proj-title">Eddie — KTW Knowledge Assistant</div>
-        <div class="proj-role">Senior GenAI Engineer</div>
-        <div class="proj-desc">A multi-agent RAG system on LangGraph and ChromaDB with a six-node pipeline (Boundary Guard, Classifier, Clarifier, Retriever, Solution Router, Composer) routing users through a 108-solution catalog tied to a 109-key data model. Backed by a four-layer UAT framework — a 45-scenario golden set, 23 adversarial cases, LLM-as-judge scoring, and a 600-scenario routing benchmark — and deployed on AWS EC2 behind nginx with Let's Encrypt SSL.</div>
-        <div class="proj-tags">
-          <span class="tag">LangGraph</span><span class="tag">ChromaDB</span><span class="tag">GPT-4o</span><span class="tag">OpenTelemetry</span>
-        </div>
-        <div class="proj-stats">
-          <div><div class="proj-stat-val">108</div><div class="proj-stat-label">Solution catalog</div></div>
-          <div><div class="proj-stat-val">600</div><div class="proj-stat-label">Routing benchmark cases</div></div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">06</span>
-      <h2 class="sec-title">NCRA–CMS Lab, MUET</h2>
-      <span class="sec-sub">Jamshoro · Industrial ML</span>
+      <span class="sec-num">04</span>
+      <h2 class="sec-title">Industrial ML</h2>
+      <span class="sec-sub">Fault diagnosis · predictive maintenance</span>
     </div>
 
+    <div class="sub-label">NCRA–CMS Lab, MUET</div>
     <div class="proj-grid">
       <div class="proj-card">
         <img class="proj-image" src="https://images.unsplash.com/photo-1610611342266-bcc131ecc78c?auto=format&fit=crop&w=1200&q=60" alt="Close-up of railway tracks" loading="lazy">
@@ -346,8 +339,7 @@
       </div>
     </div>
 
-    <div class="sub-label" style="margin-top:32px;">Additional research</div>
-    <div class="micro-grid">
+    <div class="micro-grid" style="margin-top:1px;">
       <div class="micro-card">
         <img class="micro-image" src="https://images.unsplash.com/photo-1540804236945-b6ae24bfe0a9?auto=format&fit=crop&w=800&q=60" alt="Railway track between tall trees" loading="lazy">
         <div class="micro-body">
@@ -371,7 +363,7 @@
 <footer id="contact">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-num">07</span>
+      <span class="sec-num">05</span>
       <h2 class="sec-title">Contact</h2>
     </div>
     <div class="contact-grid">
