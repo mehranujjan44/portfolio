@@ -29,9 +29,9 @@
 
 <div class="pagehead">
   <div class="wrap">
-    <div class="eyebrow">Log entries — 6 systems</div>
+    <div class="eyebrow">Log entries — by deployment</div>
     <h1 class="pagetitle">Projects</h1>
-    <p class="pagesub">Production systems, not prototypes — spanning 3D reconstruction, edge inference fleets, enterprise GenAI, and the industrial ML that came before all of it.</p>
+    <p class="pagesub">Production systems, organized by the company that shipped them — field-deployed perception at Kodifly, the SpatialSense SaaS suite, video analytics at Hubcom, applied GenAI and CV at Synaptics, enterprise RAG at Accelerated Innovation, and the industrial ML that started it all at NCRA.</p>
   </div>
 </div>
 
@@ -39,68 +39,145 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="sec-num">01</span>
-      <h2 class="sec-title">3D perception &amp; edge</h2>
-      <span class="sec-sub">Kodifly · 2025 — 2026</span>
+      <h2 class="sec-title">Kodifly — field-deployed perception</h2>
+      <span class="sec-sub">2025 — 2026 · Islamabad</span>
     </div>
+
     <div class="proj-grid">
+      <div class="proj-card">
+        <img class="proj-image" src="https://images.unsplash.com/photo-1660367532596-c06c8c47a0e5?auto=format&fit=crop&w=1200&q=60" alt="Tunnel infrastructure" loading="lazy">
+        <div class="proj-body">
+        <div class="proj-kicker">Intrusion &amp; safety monitoring</div>
+        <div class="proj-title">Human Intrusion Detection System</div>
+        <div class="proj-role">Client: EMSD, Hong Kong</div>
+        <div class="proj-desc">6 Jetson Orin NX units deployed across tunnels and site locations, monitoring for people, animal, and bicycle intrusion. Also flags PPE non-compliance (missing helmet or vest) and vehicles without visible number plates.</div>
+        <div class="proj-tags">
+          <span class="tag">Jetson Orin NX</span><span class="tag">PPE compliance</span><span class="tag">Intrusion detection</span>
+        </div>
+        <div class="proj-stats">
+          <div><div class="proj-stat-val">6</div><div class="proj-stat-label">Jetson units</div></div>
+          <div><div class="proj-stat-val">4</div><div class="proj-stat-label">Alert categories</div></div>
+        </div>
+        </div>
+      </div>
 
       <div class="proj-card">
+        <img class="proj-image" src="https://images.unsplash.com/photo-1611932846203-c4c9e2e825a8?auto=format&fit=crop&w=1200&q=60" alt="Rocky mountain slope" loading="lazy">
+        <div class="proj-body">
+        <div class="proj-kicker">Slope safety · Railway</div>
+        <div class="proj-title">Landslide Detection</div>
+        <div class="proj-role">Railway tunnel approach slopes</div>
+        <div class="proj-desc">Detects landslides and fallen rock on slopes near railway tunnels to raise early alerts, fusing Hikvision camera feeds with Livox LiDAR scans of the slope surface.</div>
+        <div class="proj-tags">
+          <span class="tag">Livox LiDAR</span><span class="tag">Hikvision</span><span class="tag">Slope monitoring</span>
+        </div>
+        <div class="proj-stats">
+          <div><div class="proj-stat-val">2</div><div class="proj-stat-label">Sensor types fused</div></div>
+          <div><div class="proj-stat-val">Real-time</div><div class="proj-stat-label">Alerting</div></div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-label" style="margin-top:32px;">Flagship — largest deployment</div>
+    <div class="proj-grid">
+      <div class="proj-card" style="grid-column:1/-1;">
         <img class="proj-image" src="https://images.unsplash.com/photo-1686358244616-aed9e9a1d827?auto=format&fit=crop&w=1200&q=60" alt="Aerial view of a construction site" loading="lazy">
         <div class="proj-body">
-        <div class="proj-kicker">Construction · Video analytics</div>
+        <div class="proj-kicker">Construction · Video &amp; 3D analytics</div>
         <div class="proj-title">Smart-Eye</div>
-        <div class="proj-role">Senior Computer Vision Engineer · Islamabad · Clients: MTR Corporation &amp; EMSD (Hong Kong)</div>
-        <div class="proj-desc">Live video analytics for construction sites, combining PaddleDetection, VLMs, and classical CV to track tower crane uptime, traffic congestion, weld quality, and landslide risk — running on multi-camera edge hardware at production latency.</div>
+        <div class="proj-role">The largest system built at Kodifly — 40+ Jetson devices in the field, each paired with a camera and LiDAR on a PTZ dome. Live product, behind a client paywall.</div>
         <div class="proj-tags">
-          <span class="tag">PaddleDetection</span><span class="tag">VLMs</span><span class="tag">TensorRT</span><span class="tag">DeepStream</span>
-        </div>
-        <div class="proj-stats">
-          <div><div class="proj-stat-val">40+</div><div class="proj-stat-label">Jetson devices</div></div>
-          <div><div class="proj-stat-val">4</div><div class="proj-stat-label">Analytics modules</div></div>
+          <span class="tag">40+ Jetson devices</span><span class="tag">LiDAR + PTZ</span><span class="tag">FAST-LIVO2</span>
         </div>
         </div>
       </div>
+    </div>
 
-      <div class="proj-card">
-        <img class="proj-image" src="https://images.unsplash.com/photo-1764983253036-edd0f55af679?auto=format&fit=crop&w=1200&q=60" alt="Sensor array on an autonomous vehicle" loading="lazy">
-        <div class="proj-body">
-        <div class="proj-kicker">3D reconstruction · Spatial intelligence</div>
-        <div class="proj-title">SpatialSense</div>
-        <div class="proj-role">Senior Computer Vision Engineer · Islamabad · Clients: MTR Corporation &amp; EMSD (Hong Kong)</div>
-        <div class="proj-desc">3D reconstruction pipeline (3DGS, NeRF Studio, SfM, point cloud fusion) built on LiDAR-camera fusion with driver-level sensor sync and georeferencing under limited calibration. Segmentation via SAM, DINO/DART, and YOLO feeds volume estimation, slope analysis, and BIM deviation detection, with 360° imagery mapped into merged point clouds.</div>
-        <div class="proj-tags">
-          <span class="tag">3D Gaussian Splatting</span><span class="tag">NeRF</span><span class="tag">SLAM</span><span class="tag">SAM</span>
-        </div>
-        <div class="proj-stats">
-          <div><div class="proj-stat-val">3</div><div class="proj-stat-label">Deviation checks</div></div>
-          <div><div class="proj-stat-val">Indoor+outdoor</div><div class="proj-stat-label">Environments</div></div>
-        </div>
-        </div>
+    <div class="sub-label">Smart-Eye capabilities</div>
+    <div class="micro-grid cols-3">
+      <div class="micro-card">
+        <div class="micro-title">Site-wide 3D fusion</div>
+        <div class="micro-desc">Every 30 minutes, SLAM runs and merges point clouds from every location into a single unified 3D representation of the site's current state, using FAST-LIVO2, custom sensor drivers, and fleet-wide device management.</div>
+        <div class="micro-tags"><span class="tag">FAST-LIVO2</span><span class="tag">PCD merging</span></div>
       </div>
-
-      <div class="proj-card">
-        <img class="proj-image" src="https://images.unsplash.com/photo-1759318965270-0549e993a3b8?auto=format&fit=crop&w=1200&q=60" alt="Aerial drone view of a construction site" loading="lazy">
-        <div class="proj-body">
-        <div class="proj-kicker">Geospatial · Change detection</div>
-        <div class="proj-title">Drone orthophoto change detection</div>
-        <div class="proj-role">Senior Computer Vision Engineer · Islamabad</div>
-        <div class="proj-desc">Temporal analysis pipeline using SAM3 segmentation and geospatial alignment to automatically detect change across building envelopes, fish ponds, and solar panels between 2024–2025 survey datasets. Results served on a client-facing web platform for direct review.</div>
-        <div class="proj-tags">
-          <span class="tag">SAM3</span><span class="tag">Geospatial alignment</span><span class="tag">Change detection</span>
-        </div>
-        <div class="proj-stats">
-          <div><div class="proj-stat-val">3</div><div class="proj-stat-label">Survey categories</div></div>
-          <div><div class="proj-stat-val">2024–25</div><div class="proj-stat-label">Dataset span</div></div>
-        </div>
-        </div>
+      <div class="micro-card">
+        <div class="micro-title">MiC installation tracking</div>
+        <div class="micro-desc">BIM comparison to track how many Modular integrated Construction (MiC) modules have been installed against plan, flagging schedule drift.</div>
+        <div class="micro-tags"><span class="tag">BIM comparison</span></div>
       </div>
+      <div class="micro-card">
+        <div class="micro-title">Tower crane monitoring</div>
+        <div class="micro-desc">Camera-based uptime and downtime tracking per crane for usage analysis across the site.</div>
+        <div class="micro-tags"><span class="tag">Usage analytics</span></div>
+      </div>
+      <div class="micro-card">
+        <div class="micro-title">Traffic congestion monitoring</div>
+        <div class="micro-desc">Tracks machinery movement in and out of site zones, analyzing usage patterns and raising alerts when a route is likely to be blocked, so teams can plan around it.</div>
+        <div class="micro-tags"><span class="tag">Route planning</span></div>
+      </div>
+      <div class="micro-card">
+        <div class="micro-title">Soil nail &amp; backfilling detection</div>
+        <div class="micro-desc">Detects soil nail installation and backfilling progress from 3D Gaussian Splatting reconstructions and drone scans.</div>
+        <div class="micro-tags"><span class="tag">3DGS</span><span class="tag">Drone scans</span></div>
+      </div>
+      <div class="micro-card">
+        <div class="micro-title">Excavated volume analysis</div>
+        <div class="micro-desc">Computes excavated volume from drone scan reconstructions to track earthworks progress against plan.</div>
+        <div class="micro-tags"><span class="tag">Volumetrics</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">SpatialSense</h2>
+      <span class="sec-sub"><a href="https://www.spatialsense.app/" target="_blank" rel="noopener" class="sec-link">spatialsense.app ↗</a></span>
+    </div>
+    <p class="pagesub" style="margin-bottom:28px;">A SaaS suite for point-cloud and image-based site analysis — the productized side of Kodifly's 3D reconstruction work.</p>
+
+    <div class="micro-grid cols-3">
+      <div class="micro-card">
+        <div class="micro-title">Time-compare analysis</div>
+        <div class="micro-desc">Compares point clouds from drone, fixed, and handheld scanners over time to show how a site has changed between visits.</div>
+        <div class="micro-tags"><span class="tag">Multi-source PCD</span></div>
+      </div>
+      <div class="micro-card">
+        <div class="micro-title">BIM deviation detection</div>
+        <div class="micro-desc">Flags anything installed on site that wasn't part of the BIM model, at LOD 300–400 precision.</div>
+        <div class="micro-tags"><span class="tag">LOD 300–400</span></div>
+      </div>
+      <div class="micro-card">
+        <div class="micro-title">Visual progress analysis</div>
+        <div class="micro-desc">Tracks what's been installed on site over time. Used on a Saudi road network project to identify how many signboards and traffic signals had been installed along a scanned highway corridor.</div>
+        <div class="micro-tags"><span class="tag">Saudi road network</span></div>
+      </div>
+      <div class="micro-card">
+        <div class="micro-title">Solar &amp; fishpond encroachment analysis</div>
+        <div class="micro-desc">Built for the Lands Department of Hong Kong: segments solar panels and fishponds from drone imagery to detect encroachment, plus a time-compare analysis of how many additional solar panels were installed between 2024 and 2025.</div>
+        <div class="micro-tags"><span class="tag">Lands Dept, HK</span><span class="tag">Segmentation</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">Hubcom — BURD</h2>
+      <span class="sec-sub"><a href="https://hubcom.co/products/burd/" target="_blank" rel="noopener" class="sec-link">hubcom.co/products/burd ↗</a></span>
+    </div>
+    <div class="proj-grid">
       <div class="proj-card">
         <img class="proj-image" src="https://images.unsplash.com/photo-1563920443079-783e5c786b83?auto=format&fit=crop&w=1200&q=60" alt="CCTV surveillance cameras" loading="lazy">
         <div class="proj-body">
         <div class="proj-kicker">Video analytics · Crowd &amp; behavior</div>
         <div class="proj-title">BURD</div>
-        <div class="proj-role">Senior AI Engineer, Lead Architect · Hubcom · Karachi · Clients: Authority of the Two Holy Mosques, IKEA</div>
+        <div class="proj-role">Senior AI Engineer, Lead Architect · Karachi · Clients: Authority of the Two Holy Mosques, IKEA</div>
         <div class="proj-desc">Bio User Recognition Data — a full video analytics stack built from zero: detection, facial recognition (InsightFace SCRFD/ArcFace), person re-ID (OSNet, CLIPReID), multi-object tracking (DeepSORT, ByteTrack), activity recognition, and PPE compliance, unified in one production pipeline and deployed on AWS GPU EC2/ECS/EKS behind FastAPI.</div>
         <div class="proj-tags">
           <span class="tag">InsightFace</span><span class="tag">ByteTrack</span><span class="tag">AWS EKS</span><span class="tag">Docker</span>
@@ -111,7 +188,6 @@
         </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -119,18 +195,54 @@
 <section>
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-num">02</span>
-      <h2 class="sec-title">GenAI &amp; industrial ML</h2>
-      <span class="sec-sub">Accelerated Innovation · NCRA–CMS Lab</span>
+      <span class="sec-num">04</span>
+      <h2 class="sec-title">Synaptics Solution</h2>
+      <span class="sec-sub">Karachi · Founding team</span>
+    </div>
+    <div class="micro-grid cols-3">
+      <div class="micro-card">
+        <div class="micro-title">Iris similarity analysis</div>
+        <div class="micro-desc">Analyzed iris imagery to find visually similar irises across a photo studio's stored portraits, used to generate creative "fusion" digital artwork.</div>
+        <div class="micro-tags"><span class="tag">Similarity search</span></div>
+      </div>
+      <div class="micro-card">
+        <div class="micro-title">Sales bot</div>
+        <div class="micro-desc">Conversational sales bot trained on company-specific pitch playbooks, built for Smart KI (Germany) — conversation state, objection handling, and funnel guidance via function calling.</div>
+        <div class="micro-tags"><span class="tag">Smart KI, Germany</span></div>
+      </div>
+      <div class="micro-card">
+        <div class="micro-title">Reference letter bias checker</div>
+        <div class="micro-desc">NLP pipeline detecting and flagging biased language patterns in professional reference letters, deployed for enterprise HR clients.</div>
+        <div class="micro-tags"><span class="tag">Bias detection</span></div>
+      </div>
+      <div class="micro-card">
+        <div class="micro-title">Geotechnical report analysis</div>
+        <div class="micro-desc">Automated review of geotechnical and permitting documents for a civil works contractor to identify missing or incomplete elements before submission.</div>
+        <div class="micro-tags"><span class="tag">Document review</span></div>
+      </div>
+      <div class="micro-card">
+        <div class="micro-title">NFL player anonymization</div>
+        <div class="micro-desc">A multi-step analysis pipeline that anonymized player data for talent evaluators, aimed at reducing bias in how prospects were assessed.</div>
+        <div class="micro-tags"><span class="tag">Anonymization</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title">Accelerated Innovation</h2>
+      <span class="sec-sub">US-based · Remote</span>
     </div>
     <div class="proj-grid">
-
       <div class="proj-card">
         <img class="proj-image" src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?auto=format&fit=crop&w=1200&q=60" alt="Server rack in a data center" loading="lazy">
         <div class="proj-body">
         <div class="proj-kicker">Enterprise GenAI · Multi-agent RAG</div>
         <div class="proj-title">Eddie — KTW Knowledge Assistant</div>
-        <div class="proj-role">Senior GenAI Engineer · Accelerated Innovation · US-based, remote</div>
+        <div class="proj-role">Senior GenAI Engineer</div>
         <div class="proj-desc">A multi-agent RAG system on LangGraph and ChromaDB with a six-node pipeline (Boundary Guard, Classifier, Clarifier, Retriever, Solution Router, Composer) routing users through a 108-solution catalog tied to a 109-key data model. Backed by a four-layer UAT framework — a 45-scenario golden set, 23 adversarial cases, LLM-as-judge scoring, and a 600-scenario routing benchmark — and deployed on AWS EC2 behind nginx with Let's Encrypt SSL.</div>
         <div class="proj-tags">
           <span class="tag">LangGraph</span><span class="tag">ChromaDB</span><span class="tag">GPT-4o</span><span class="tag">OpenTelemetry</span>
@@ -141,16 +253,45 @@
         </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">06</span>
+      <h2 class="sec-title">NCRA–CMS Lab, MUET</h2>
+      <span class="sec-sub">Jamshoro · Industrial ML</span>
+    </div>
+
+    <div class="proj-grid">
+      <div class="proj-card">
+        <img class="proj-image" src="https://images.unsplash.com/photo-1610611342266-bcc131ecc78c?auto=format&fit=crop&w=1200&q=60" alt="Close-up of railway tracks" loading="lazy">
+        <div class="proj-body">
+        <div class="proj-kicker">Industrial ML · Rail inspection</div>
+        <div class="proj-title">Wayside train wheel analysis</div>
+        <div class="proj-role">Client: Pakistan Railways</div>
+        <div class="proj-desc">A wayside visual inspection system for train wheel profile and wheel tread analysis — cylindrical mosaic creation, YOLO/RCNN/SSD detection, DeBlur-GAN/LCPDNet noise removal, and depth-model wheel profile estimation (HiMODE, UNET), delivered at roughly 10× lower cost than commercial competitors. Basis for multiple published papers.</div>
+        <div class="proj-tags">
+          <span class="tag">Wheel profile</span><span class="tag">Wheel tread</span><span class="tag">Depth estimation</span>
+        </div>
+        <div class="proj-stats">
+          <div><div class="proj-stat-val">10×</div><div class="proj-stat-label">Cost reduction</div></div>
+          <div><div class="proj-stat-val"><a href="publications.html" style="color:inherit;">Papers ↗</a></div><div class="proj-stat-label">Published research</div></div>
+        </div>
+        </div>
+      </div>
 
       <div class="proj-card">
         <img class="proj-image" src="https://images.unsplash.com/photo-1717444308688-866a50e55a02?auto=format&fit=crop&w=1200&q=60" alt="Close-up of a processor chip on a circuit board" loading="lazy">
         <div class="proj-body">
         <div class="proj-kicker">Industrial ML · Predictive maintenance</div>
         <div class="proj-title">AIMFIT</div>
-        <div class="proj-role">ML Design Engineer / Research Associate · NCRA–CMS Lab, MUET · Jamshoro</div>
-        <div class="proj-desc">A patented real-time induction motor fault detection system using GAN-based classification on limited, unbalanced industrial data, deployed on edge devices — built alongside ARIMA and Siamese-network time-series pipelines for bearing fault diagnosis and remaining-useful-life estimation.</div>
+        <div class="proj-role">Patented</div>
+        <div class="proj-desc">A maintenance engineer's companion for motor health analysis, covering both mechanical and electrical faults — real-time induction motor fault detection using GAN-based classification on limited, unbalanced industrial data, deployed on edge devices.</div>
         <div class="proj-tags">
-          <span class="tag">GANs</span><span class="tag">Siamese networks</span><span class="tag">Edge deployment</span>
+          <span class="tag">GANs</span><span class="tag">Mechanical faults</span><span class="tag">Electrical faults</span>
         </div>
         <div class="proj-stats">
           <div><div class="proj-stat-val">Patented</div><div class="proj-stat-label">Fault detection system</div></div>
@@ -158,24 +299,20 @@
         </div>
         </div>
       </div>
+    </div>
 
-      <div class="proj-card">
-        <img class="proj-image" src="https://images.unsplash.com/photo-1610611342266-bcc131ecc78c?auto=format&fit=crop&w=1200&q=60" alt="Close-up of railway tracks" loading="lazy">
-        <div class="proj-body">
-        <div class="proj-kicker">Industrial ML · Rail inspection</div>
-        <div class="proj-title">Wayside railway inspection</div>
-        <div class="proj-role">ML Design Engineer / Research Associate · NCRA–CMS Lab, MUET · Client: Pakistan Railways</div>
-        <div class="proj-desc">A wayside visual inspection system: cylindrical mosaic creation (warping, registration, blending), YOLO/RCNN/SSD detection, DeBlur-GAN/LCPDNet noise removal, and depth-model wheel profile estimation (HiMODE, UNET) — delivered at roughly 10× lower cost than commercial competitors, and the basis for two of the published papers below.</div>
-        <div class="proj-tags">
-          <span class="tag">YOLO / RCNN</span><span class="tag">DeBlur-GAN</span><span class="tag">Depth estimation</span>
-        </div>
-        <div class="proj-stats">
-          <div><div class="proj-stat-val">10×</div><div class="proj-stat-label">Cost reduction</div></div>
-          <div><div class="proj-stat-val">2</div><div class="proj-stat-label">Papers published</div></div>
-        </div>
-        </div>
+    <div class="sub-label" style="margin-top:32px;">Additional research</div>
+    <div class="micro-grid">
+      <div class="micro-card">
+        <div class="micro-title">Low-cost track condition analysis</div>
+        <div class="micro-desc">An early, low-cost rail track analysis project from the same NCRA period — one of the building blocks behind the wayside inspection work above.</div>
+        <div class="micro-tags"><span class="tag">Track analysis</span></div>
       </div>
-
+      <div class="micro-card">
+        <div class="micro-title">GAN-based adhesion estimation</div>
+        <div class="micro-desc">Master's thesis project: a GAN-based approach to estimating wheel-rail adhesion, contributing to the broader fault-diagnosis and condition-monitoring work at the lab.</div>
+        <div class="micro-tags"><span class="tag">Master's thesis</span><span class="tag">GANs</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -183,7 +320,7 @@
 <footer id="contact">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-num">03</span>
+      <span class="sec-num">07</span>
       <h2 class="sec-title">Contact</h2>
     </div>
     <div class="contact-grid">
