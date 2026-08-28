@@ -7,22 +7,27 @@
 <meta name="description" content="Sanaullah Mehran — 3D reconstruction, SLAM, LiDAR-camera fusion, and distributed edge AI systems in production.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23050506'/%3E%3Ccircle cx='50' cy='50' r='34' fill='none' stroke='%23ddff00' stroke-width='7'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23ff2f78'/%3E%3C/svg%3E">
 </head>
 <body>
 
+<div class="transition-veil" aria-hidden="true"><span>Scanning</span></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="bg-fx" aria-hidden="true"></div>
 <div id="progress"></div>
 
 <header class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="index.html"><span class="dot">●</span> S. MEHRAN // FIELD LOG</a>
+    <a class="brand magnetic" href="index.html"><span class="dot">●</span> S.MEHRAN <span class="brand-sub">// FIELD_SCAN</span></a>
     <nav class="toplinks">
-      <a href="index.html" class="active">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="experience.html">Experience</a>
-      <a href="publications.html">Publications</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html" class="active magnetic" data-scramble>Home</a>
+      <a href="projects.html" class="magnetic" data-scramble>Projects</a>
+      <a href="experience.html" class="magnetic" data-scramble>Experience</a>
+      <a href="publications.html" class="magnetic" data-scramble>Publications</a>
+      <a href="index.html#contact" class="magnetic" data-scramble>Contact</a>
     </nav>
   </div>
 </header>
@@ -31,13 +36,13 @@
   <canvas id="hero-canvas"></canvas>
   <div class="wrap hero-inner">
     <div class="eyebrow">Scan active — 7+ years in field</div>
-    <h1 class="name">Sanaullah Mehran</h1>
+    <h1 class="name glitch" data-text="Sanaullah Mehran">Sanaullah Mehran</h1>
     <p class="role">Senior 3D Perception &amp; Edge AI Engineer</p>
     <p class="lede">I build systems that see, fuse, and run at the edge — 3D reconstruction, SLAM, LiDAR-camera fusion, and distributed inference fleets, deployed on hardware that's uncalibrated, in conditions that are noisy, under latency that's real.</p>
     <div class="hero-actions">
-      <a class="btn primary" href="mailto:mehranujjan44@gmail.com">Get in touch</a>
-      <a class="btn" href="projects.html">View projects</a>
-      <a class="btn" href="https://linkedin.com/in/sanaullah-mehran-394860120" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn primary magnetic" href="mailto:mehranujjan44@gmail.com">Get in touch</a>
+      <a class="btn magnetic" href="projects.html">View projects</a>
+      <a class="btn magnetic" href="https://linkedin.com/in/sanaullah-mehran-394860120" target="_blank" rel="noopener">LinkedIn ↗</a>
     </div>
     <div class="coords">
       <span><b>POS</b> Islamabad, PK</span>
@@ -47,13 +52,20 @@
   </div>
 </section>
 
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>SLAM</span><span class="sep">•</span><span>3D GAUSSIAN SPLATTING</span><span class="sep">•</span><span>LIDAR FUSION</span><span class="sep">•</span><span>EDGE AI</span><span class="sep">•</span><span>NERF</span><span class="sep">•</span><span>MULTI-AGENT RAG</span><span class="sep">•</span><span>JETSON FLEETS</span><span class="sep">•</span><span>POINT CLOUD FUSION</span><span class="sep">•</span>
+    <span>SLAM</span><span class="sep">•</span><span>3D GAUSSIAN SPLATTING</span><span class="sep">•</span><span>LIDAR FUSION</span><span class="sep">•</span><span>EDGE AI</span><span class="sep">•</span><span>NERF</span><span class="sep">•</span><span>MULTI-AGENT RAG</span><span class="sep">•</span><span>JETSON FLEETS</span><span class="sep">•</span><span>POINT CLOUD FUSION</span><span class="sep">•</span>
+  </div>
+</div>
+
 <div class="telemetry">
   <div class="wrap">
     <div class="telemetry-grid">
-      <div class="tcell"><div class="tval">7+</div><div class="tlabel">Years in production AI</div></div>
-      <div class="tcell"><div class="tval">13</div><div class="tlabel">Peer-reviewed papers</div></div>
-      <div class="tcell"><div class="tval">200+</div><div class="tlabel">Citations</div></div>
-      <div class="tcell"><div class="tval">40+</div><div class="tlabel">Edge devices in fleet</div></div>
+      <div class="tcell"><div class="tval"><span class="counter" data-target="7">0</span>+</div><div class="tlabel">Years in production AI</div></div>
+      <div class="tcell"><div class="tval"><span class="counter" data-target="13">0</span></div><div class="tlabel">Peer-reviewed papers</div></div>
+      <div class="tcell"><div class="tval"><span class="counter" data-target="200">0</span>+</div><div class="tlabel">Citations</div></div>
+      <div class="tcell"><div class="tval"><span class="counter" data-target="40">0</span>+</div><div class="tlabel">Edge devices in fleet</div></div>
     </div>
   </div>
 </div>
@@ -65,45 +77,45 @@
       <h2 class="sec-title">Featured systems</h2>
       <span class="sec-sub"><a href="projects.html">all projects ↗</a></span>
     </div>
-    <div class="proj-grid">
-      <div class="proj-card">
-        <img class="proj-image" src="https://images.unsplash.com/photo-1686358244616-aed9e9a1d827?auto=format&fit=crop&w=1200&q=60" alt="Aerial view of a construction site" loading="lazy">
-        <div class="proj-body">
-        <div class="proj-kicker">Construction · Video analytics</div>
-        <div class="proj-title">Smart-Eye</div>
-        <div class="proj-role">Kodifly · Senior Computer Vision Engineer</div>
-        <div class="proj-desc">Real-time site analytics on live construction feeds — crane uptime, traffic congestion, weld quality, and landslide risk, running on edge hardware in the field.</div>
-        <div class="proj-tags"><span class="tag">PaddleDetection</span><span class="tag">VLMs</span><span class="tag">DeepStream</span></div>
+    <div class="stack-wrap">
+      <div class="stack-card">
+        <div class="stack-media"><img src="https://images.unsplash.com/photo-1686358244616-aed9e9a1d827?auto=format&fit=crop&w=1200&q=60" alt="Aerial view of a construction site" loading="lazy"></div>
+        <div class="stack-body">
+          <div class="stack-kicker">Construction · Video analytics</div>
+          <h3 class="stack-title">Smart-Eye</h3>
+          <div class="stack-role">Kodifly · Senior Computer Vision Engineer</div>
+          <p class="stack-desc">Real-time site analytics on live construction feeds — crane uptime, traffic congestion, weld quality, and landslide risk, running on edge hardware in the field.</p>
+          <div class="stack-tags"><span class="tag">PaddleDetection</span><span class="tag">VLMs</span><span class="tag">DeepStream</span></div>
         </div>
       </div>
-      <div class="proj-card">
-        <img class="proj-image" src="https://images.unsplash.com/photo-1764983253036-edd0f55af679?auto=format&fit=crop&w=1200&q=60" alt="Sensor array on an autonomous vehicle" loading="lazy">
-        <div class="proj-body">
-        <div class="proj-kicker">3D reconstruction · Spatial intelligence</div>
-        <div class="proj-title">SpatialSense</div>
-        <div class="proj-role">Kodifly · Senior Computer Vision Engineer</div>
-        <div class="proj-desc">LiDAR-camera fusion and 3DGS/NeRF/SfM reconstruction pipelines feeding volume estimation, slope analysis, and BIM deviation detection in production.</div>
-        <div class="proj-tags"><span class="tag">3D Gaussian Splatting</span><span class="tag">SAM</span><span class="tag">SLAM</span></div>
+      <div class="stack-card">
+        <div class="stack-media"><img src="https://images.unsplash.com/photo-1764983253036-edd0f55af679?auto=format&fit=crop&w=1200&q=60" alt="Sensor array on an autonomous vehicle" loading="lazy"></div>
+        <div class="stack-body">
+          <div class="stack-kicker">3D reconstruction · Spatial intelligence</div>
+          <h3 class="stack-title">SpatialSense</h3>
+          <div class="stack-role">Kodifly · Senior Computer Vision Engineer</div>
+          <p class="stack-desc">LiDAR-camera fusion and 3DGS/NeRF/SfM reconstruction pipelines feeding volume estimation, slope analysis, and BIM deviation detection in production.</p>
+          <div class="stack-tags"><span class="tag">3D Gaussian Splatting</span><span class="tag">SAM</span><span class="tag">SLAM</span></div>
         </div>
       </div>
-      <div class="proj-card">
-        <img class="proj-image" src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?auto=format&fit=crop&w=1200&q=60" alt="Server rack in a data center" loading="lazy">
-        <div class="proj-body">
-        <div class="proj-kicker">Enterprise GenAI · Multi-agent RAG</div>
-        <div class="proj-title">Eddie — KTW Knowledge Assistant</div>
-        <div class="proj-role">Accelerated Innovation · Senior GenAI Engineer</div>
-        <div class="proj-desc">Six-node multi-agent RAG system routing enterprise users through a 108-solution catalog, with a four-layer UAT framework backing it.</div>
-        <div class="proj-tags"><span class="tag">LangGraph</span><span class="tag">ChromaDB</span><span class="tag">GPT-4o</span></div>
+      <div class="stack-card">
+        <div class="stack-media"><img src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?auto=format&fit=crop&w=1200&q=60" alt="Server rack in a data center" loading="lazy"></div>
+        <div class="stack-body">
+          <div class="stack-kicker">Enterprise GenAI · Multi-agent RAG</div>
+          <h3 class="stack-title">Eddie — KTW Knowledge Assistant</h3>
+          <div class="stack-role">Accelerated Innovation · Senior GenAI Engineer</div>
+          <p class="stack-desc">Six-node multi-agent RAG system routing enterprise users through a 108-solution catalog, with a four-layer UAT framework backing it.</p>
+          <div class="stack-tags"><span class="tag">LangGraph</span><span class="tag">ChromaDB</span><span class="tag">GPT-4o</span></div>
         </div>
       </div>
-      <div class="proj-card">
-        <img class="proj-image" src="https://images.unsplash.com/photo-1563920443079-783e5c786b83?auto=format&fit=crop&w=1200&q=60" alt="CCTV surveillance cameras" loading="lazy">
-        <div class="proj-body">
-        <div class="proj-kicker">Video analytics · Crowd &amp; behavior</div>
-        <div class="proj-title">BURD</div>
-        <div class="proj-role">Hubcom · Senior AI Engineer, Lead Architect</div>
-        <div class="proj-desc">Full-stack video analytics platform — detection, facial recognition, re-ID, tracking, and activity recognition — deployed for crowd analytics at the Two Holy Mosques and IKEA.</div>
-        <div class="proj-tags"><span class="tag">InsightFace</span><span class="tag">ByteTrack</span><span class="tag">AWS EKS</span></div>
+      <div class="stack-card">
+        <div class="stack-media"><img src="https://images.unsplash.com/photo-1563920443079-783e5c786b83?auto=format&fit=crop&w=1200&q=60" alt="CCTV surveillance cameras" loading="lazy"></div>
+        <div class="stack-body">
+          <div class="stack-kicker">Video analytics · Crowd &amp; behavior</div>
+          <h3 class="stack-title">BURD</h3>
+          <div class="stack-role">Hubcom · Senior AI Engineer, Lead Architect</div>
+          <p class="stack-desc">Full-stack video analytics platform — detection, facial recognition, re-ID, tracking, and activity recognition — deployed for crowd analytics at the Two Holy Mosques and IKEA.</p>
+          <div class="stack-tags"><span class="tag">InsightFace</span><span class="tag">ByteTrack</span><span class="tag">AWS EKS</span></div>
         </div>
       </div>
     </div>
@@ -116,8 +128,9 @@
       <span class="sec-num">02</span>
       <h2 class="sec-title">Contact</h2>
     </div>
+    <h3 class="contact-lede glitch" data-text="Let's build something that sees.">Let's build something that sees.</h3>
     <div class="contact-grid">
-      <p class="contact-lede">Building or hiring for 3D perception, SLAM, or edge AI systems? Let's talk.</p>
+      <p class="mono" style="color:var(--dim);max-width:420px;">Building or hiring for 3D perception, SLAM, or edge AI systems? Let's talk.</p>
       <ul class="contact-list">
         <li><span class="k">Email</span> <a href="mailto:mehranujjan44@gmail.com">mehranujjan44@gmail.com</a></li>
         <li><span class="k">Phone</span> <span>+92 343 3711130</span></li>
@@ -131,6 +144,7 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js" defer></script>
+<script src="script.js" defer></script>
 </body>
 </html>

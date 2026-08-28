@@ -7,22 +7,27 @@
 <meta name="description" content="Production systems built by Sanaullah Mehran across 3D perception, edge AI, and enterprise GenAI.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23050506'/%3E%3Ccircle cx='50' cy='50' r='34' fill='none' stroke='%23ddff00' stroke-width='7'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23ff2f78'/%3E%3C/svg%3E">
 </head>
 <body>
 
+<div class="transition-veil" aria-hidden="true"><span>Scanning</span></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="bg-fx" aria-hidden="true"></div>
 <div id="progress"></div>
 
 <header class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="index.html"><span class="dot">●</span> S. MEHRAN // FIELD LOG</a>
+    <a class="brand magnetic" href="index.html"><span class="dot">●</span> S.MEHRAN <span class="brand-sub">// FIELD_SCAN</span></a>
     <nav class="toplinks">
-      <a href="index.html">Home</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="experience.html">Experience</a>
-      <a href="publications.html">Publications</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html" class="magnetic" data-scramble>Home</a>
+      <a href="projects.html" class="active magnetic" data-scramble>Projects</a>
+      <a href="experience.html" class="magnetic" data-scramble>Experience</a>
+      <a href="publications.html" class="magnetic" data-scramble>Publications</a>
+      <a href="index.html#contact" class="magnetic" data-scramble>Contact</a>
     </nav>
   </div>
 </header>
@@ -30,7 +35,7 @@
 <div class="pagehead">
   <div class="wrap">
     <div class="eyebrow">Log entries — by area of expertise</div>
-    <h1 class="pagetitle">Projects</h1>
+    <h1 class="pagetitle glitch" data-text="Projects">Projects</h1>
     <p class="pagesub">Production systems, grouped by discipline rather than employer — 3D reconstruction and spatial intelligence, video analytics and surveillance, enterprise GenAI, and the industrial ML that started it all.</p>
   </div>
 </div>
@@ -360,14 +365,22 @@
   </div>
 </section>
 
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>SLAM</span><span class="sep">•</span><span>3D GAUSSIAN SPLATTING</span><span class="sep">•</span><span>LIDAR FUSION</span><span class="sep">•</span><span>EDGE AI</span><span class="sep">•</span><span>NERF</span><span class="sep">•</span><span>MULTI-AGENT RAG</span><span class="sep">•</span><span>JETSON FLEETS</span><span class="sep">•</span><span>POINT CLOUD FUSION</span><span class="sep">•</span>
+    <span>SLAM</span><span class="sep">•</span><span>3D GAUSSIAN SPLATTING</span><span class="sep">•</span><span>LIDAR FUSION</span><span class="sep">•</span><span>EDGE AI</span><span class="sep">•</span><span>NERF</span><span class="sep">•</span><span>MULTI-AGENT RAG</span><span class="sep">•</span><span>JETSON FLEETS</span><span class="sep">•</span><span>POINT CLOUD FUSION</span><span class="sep">•</span>
+  </div>
+</div>
+
 <footer id="contact">
   <div class="wrap">
     <div class="sec-head">
       <span class="sec-num">05</span>
       <h2 class="sec-title">Contact</h2>
     </div>
+    <h3 class="contact-lede glitch" data-text="Let's build something that sees.">Let's build something that sees.</h3>
     <div class="contact-grid">
-      <p class="contact-lede">Building or hiring for 3D perception, SLAM, or edge AI systems? Let's talk.</p>
+      <p class="mono" style="color:var(--dim);max-width:420px;">Building or hiring for 3D perception, SLAM, or edge AI systems? Let's talk.</p>
       <ul class="contact-list">
         <li><span class="k">Email</span> <a href="mailto:mehranujjan44@gmail.com">mehranujjan44@gmail.com</a></li>
         <li><span class="k">Phone</span> <span>+92 343 3711130</span></li>
@@ -381,6 +394,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
